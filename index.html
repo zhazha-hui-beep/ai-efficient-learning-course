@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI高效使用课程 - 火热报名中</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="course-card">
+            <div class="course-image">
+                <div class="badge">火热报名中</div>
+                <!-- 课程封面图片 -->
+                <!-- 请将你的课程封面图片命名为 course-cover.jpg 并放在 images 文件夹中 -->
+                <img src="images/course-cover.jpg" alt="课程封面" class="cover-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 400 300%27%3E%3Crect fill=%27%231a1a2e%27 width=%27400%27 height=%27300%27/%3E%3Ctext fill=%27%23fff%27 font-size=%2716%27 x=%2750%25%27 y=%2750%25%27 text-anchor=%27middle%27 dy=%27.3em%27%3E请添加课程封面图片%3C/text%3E%3Ctext fill=%27%23888%27 font-size=%2712%27 x=%2750%25%27 y=%2755%25%27 text-anchor=%27middle%27 dy=%27.3em%27%3Eimages/course-cover.jpg%3C/text%3E%3C/svg%3E'">
+            </div>
+            <div class="course-info">
+                <h1 class="course-title">AI高效使用课程</h1>
+                <p class="course-description">借助AI整理笔记、AI梳理错题、AI归纳知识点</p>
+                <div class="course-details">
+                    <span class="detail-item">课程班期：MJ-173期</span>
+                    <span class="detail-item">课时数量：0</span>
+                </div>
+                <div class="course-price">
+                    <span class="price-value">430元</span>
+                </div>
+                <button class="buy-btn" onclick="showPayment()">购买</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content payment-modal">
+            <div class="payment-header">
+                <h2>微信支付</h2>
+            </div>
+            <div class="payment-body">
+                <div class="qr-code-container">
+                    <img src="images/qr-code.png" alt="微信支付二维码" class="qr-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 200 200%27%3E%3Crect fill=%27%23ffffff%27 width=%27200%27 height=%27200%27 rx=%2716%27/%3E%3Crect fill=%27%23f5f5f5%27 x=%278%27 y=%278%27 width=%27184%27 height=%27184%27 rx=%2712%27/%3E%3Ctext fill=%27%23666%27 font-size=%2714%27 x=%2750%25%27 y=%2745%25%27 text-anchor=%27middle%27 dy=%27.3em%27%3E请添加支付二维码%3C/text%3E%3Ctext fill=%27%23999%27 font-size=%2712%27 x=%2750%25%27 y=%2755%25%27 text-anchor=%27middle%27 dy=%27.3em%27%3Eimages/qr-code.png%3C/text%3E%3C/svg%3E'">
+                </div>
+                <p class="payment-hint">请使用微信扫码支付</p>
+                <div class="payment-footer">
+                    <svg viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="16" fill="#25D366"/>
+                        <path d="M12 14 L12 22 L18 18 L24 22 L24 14 L18 18 Z" fill="#fff"/>
+                    </svg>
+                    <span>微信支付</span>
+                </div>
+                <p class="payment-tip">支付金额：430元</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content success-content">
+            <div class="success-icon">✓</div>
+            <h2>支付成功</h2>
+            <p>恭喜您，购买成功！</p>
+            <button class="ok-btn" onclick="closeSuccess()">确定</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
